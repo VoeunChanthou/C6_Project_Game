@@ -22,6 +22,11 @@ dino = PhotoImage(file='image/photo_2023-10-20_10-09-36-removebg-preview 1.png')
 dino_egg = PhotoImage(file='image/dino_egg-removebg-preview 1.png')
 dino_nest = PhotoImage(file='image/nest.png')
 coin = PhotoImage(file='image/coin.png')
+turtle_enermey_1 = PhotoImage(file='image/turtle-3.png')
+turtle_enermey_2 = PhotoImage(file='image/turtle-4.png')
+bird_1 = PhotoImage(file='image/bird.png')
+bird_2 = PhotoImage(file='image/bird_2.png')
+trap = PhotoImage(file='image/trap.png')
 
 # background
 canvas.create_image(0, 0, image=ground, anchor=NW, tags="PLATFORM")
@@ -32,10 +37,22 @@ canvas.create_image(3594, 0, image=ground, anchor=NW, tags="PLATFORM")
 canvas.create_image(0, 572, image=whater, anchor=NW)
 canvas.create_image(1144, 572, image=whater, anchor=NW)
 canvas.create_image(2288, 572, image=whater, anchor=NW)
+
 # Dino
 canvas.create_image(0, 473, image=dino, anchor=NW)
 canvas.create_image(2400, 100, image=dino_egg, anchor=NW)
 canvas.create_image(3890,250, image=dino_nest, anchor=NW)
+canvas.create_image(3090,250, image=turtle_enermey_1, anchor=NW)
+canvas.create_image(3090,250, image=turtle_enermey_1, anchor=NW)
+canvas.create_image(3660,400, image=turtle_enermey_2, anchor=NW)
+canvas.create_image(2190,370, image=turtle_enermey_2, anchor=NW)
+canvas.create_image(3190,500, image=turtle_enermey_2, anchor=NW)
+canvas.create_image(3840,400, image=trap, anchor=NW)
+canvas.create_image(1700,260, image=trap, anchor=NW)
+canvas.create_image(2500, 100, image=bird_2, anchor=NW)
+
+
+
 
 # 
 canvas.create_image(0,525, image=lead1, anchor=NW)
@@ -49,6 +66,7 @@ canvas.create_image(950,325, image=lead1, anchor=NW)
 canvas.create_image(2090,390, image=lead1, anchor=NW)
 canvas.create_image(3090,270, image=lead1, anchor=NW)
 canvas.create_image(1590,290, image=lead1, anchor=NW)
+
 # 
 canvas.create_image(0,355, image=lead2, anchor=NW)
 canvas.create_image(0,190, image=lead2, anchor=NW)
@@ -82,26 +100,93 @@ canvas.create_image(3660,425, image=lead4, anchor=NW)
 # coin////////////////////
 k = 10
 for i in range(3):
-    money = canvas.create_image(200+k,525, image=coin)
+    money = canvas.create_image(200+k, 525, image=coin)
     k += 30
-for i in range(10):
-    money = canvas.create_image(410 + k, 525, image=coin)
+for i in range(5):
+    money = canvas.create_image(480 + k, 525, image=coin)
     k += 30
-# for i in range(5):
-#     money = canvas.create_image(200 + k, 270, image=coin)
-#     k += 30
-# for i in range(6):
-#     money = canvas.create_image(850 + k, 330, image=coin)
-#     k += 30
-# for i in range(6):
-#     money = canvas.create_image(860 + k, 570, image=coin)
-#     k += 30
-# for i in range(6):
-#     money = canvas.create_image(1050 + k, 350, image=coin)
-#     k += 30
-# for i in range(6):
-#     money = canvas.create_image(2300 + k, 400, image=coin)
-#     k += 30
+
+for i in range(4):
+    money = canvas.create_image(240 + k, 379, image=coin)
+    k += 30
+for i in range(4):
+    money = canvas.create_image(110 + k,160, image=coin)
+    k += 30
+for i in range(4):
+    money = canvas.create_image(260 + k,380, image=coin)
+    k += 30
+for i in range(4):
+    money = canvas.create_image(85 + k,240, image=coin)
+    k += 30
+for i in range(7):
+    money = canvas.create_image(300 + k,300, image=coin)
+    k += 30
+for i in range(7):
+    money = canvas.create_image(120 + k, 525, image=coin)
+    k += 30
+for i in range(4):
+    money = canvas.create_image(10 + k,180, image=coin)
+    k += 30   
+for i in range(4):
+    money = canvas.create_image(100 + k,350, image=coin)
+    k += 30
+for i in range(8):
+    money = canvas.create_image(250 + k,500, image=coin)
+    k += 30
+for i in range(8):
+    money = canvas.create_image(145 + k,280, image=coin)
+    k += 30
+for i in range(8):
+    money = canvas.create_image(210 + k,500, image=coin)
+    k += 30
+for i in range(3):
+    money = canvas.create_image(210 + k,350, image=coin)
+    k += 30
+for i in range(4):
+    money = canvas.create_image(400 + k,270, image=coin)
+    k += 30
+for i in range(4):
+    money = canvas.create_image(570 + k,270, image=coin)
+    k += 30
+for i in range(8):
+    money = canvas.create_image(130 + k,500, image=coin)
+    k += 30
+for i in range(6):
+    money = canvas.create_image(600 + k,500, image=coin)
+    k += 30
+for i in range(6):
+    money = canvas.create_image(350 + k,250, image=coin)
+    k += 30
+for i in range(4):
+    money = canvas.create_image(350 + k, 379, image=coin)
+    k += 30
+
+
+
+
+money = canvas.create_image(1430, 515, image=coin)
+money = canvas.create_image(2980, 515, image=coin)
+money = canvas.create_image(240, 380, image=coin)
+money = canvas.create_image(270, 380, image=coin)
+money = canvas.create_image(300, 380, image=coin)
+money = canvas.create_image(330, 380, image=coin)
+money = canvas.create_image(260, 250, image=coin)
+money = canvas.create_image(290, 250, image=coin)
+money = canvas.create_image(320, 250, image=coin)
+money = canvas.create_image(350, 250, image=coin)
+money = canvas.create_image(2730, 180, image=coin)
+money = canvas.create_image(2210, 160, image=coin)
+money = canvas.create_image(2080, 190, image=coin)
+
+money = canvas.create_image(50, 330, image=coin)
+money = canvas.create_image(80, 330, image=coin)
+money = canvas.create_image(110, 330, image=coin)
+money = canvas.create_image(50, 160, image=coin)
+money = canvas.create_image(80, 160, image=coin)
+money = canvas.create_image(110, 160, image=coin)
+
+
+
 
 
 
